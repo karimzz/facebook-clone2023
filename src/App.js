@@ -6,11 +6,9 @@ function App() {
   return (
     <div>
 
-    <h2>Hello</h2>
-        
+      <NavBar />
       <BrowserRouter>
         <Routes>
-          <Route element={<NavBar />} path='home'/>
         </Routes>
       </BrowserRouter>  
     </div>

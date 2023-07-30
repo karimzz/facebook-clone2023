@@ -7,6 +7,17 @@ align-items: center;
 background-color: #ffffff;
 }
 
+.search{
+    
+}
+
+.search .searchBar {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
 nav .not a img{
 width: 40px;
 height: 40px;
