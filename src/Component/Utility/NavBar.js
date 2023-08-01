@@ -8,7 +8,7 @@ const NavBar = () => {
     <nav>
         <div className='search'>
             <div className='iconF'>
-              <img loading='lazy' alt='facebook' src={facebookIcon}  />
+              <img loading='lazy' alt='facebook' style={{borderRadius : "50%"}} src={facebookIcon}  />
             </div>
             <div className='bar'>
               <span className="material-symbols-outlined">
