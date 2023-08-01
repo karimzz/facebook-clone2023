@@ -1,3 +1,17 @@
+
+
+/* Start Glball CSS*/
+
+:root{
+  --main-background:#f0f2f5;
+  --font-color :#9ea0a2;
+  --blue-color :#1b74e4;
+}
+
+
+/* End Global CSS */
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +19,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main-backgroundcolor) !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+*{
+  padding: 0;
+  margin: 0 ;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--main-background);
 }
