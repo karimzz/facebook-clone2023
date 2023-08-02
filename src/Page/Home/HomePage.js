@@ -1,7 +1,7 @@
 import React from 'react' ; 
 import "./homePage.css" ; 
-import profilePic  from "../../Image/profile.jpg" ; 
 import AsideComponent from '../../Component/Home/AsideComponent';
+import StoryComponent from '../../Component/Home/StoryComponent';
 
 
 const HomePage = () => {
@@ -10,11 +10,11 @@ const HomePage = () => {
 
         <AsideComponent />
 
-        <main>
-            Main
+        <main className='main-content'>
+            <StoryComponent />
         </main>
 
-        <section className='sponser'>
+        <section className='sponser' style={{width : "350px"}}>
             Active
         </section>
     

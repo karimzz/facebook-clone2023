@@ -124,3 +124,206 @@ aside .foot .copy{
     color: #7a7c80 !important;
 }
 /* End For Aside  */
+
+
+
+/* Start Main Content  */
+
+.main-content{
+    width:600px;
+}
+
+.main-content .story{
+background-color: white;
+border-radius: 10px;    
+width: 100%;
+height: 300px;
+
+}
+
+.main-content .story .type{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px ;
+    border-bottom: 1px solid #EEE;
+}
+
+.main-content .story .type button{
+    width: 49%;
+    background-color: transparent;
+    border-radius: 10px;
+    color: #65676b;
+    padding: 15px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    align-items: center;
+    transition: .4s;
+}
+
+.main-content .story .type button:hover
+{
+    background-color: var(--hover-color);
+}
+
+.active{
+    color: #1b74e4 !important;
+    position: relative;
+
+}
+
+.active::after{
+    content: '' ;
+    position: absolute;
+    width: 100%;
+    height: 3px ;
+    background-color: #1b74e4;
+    top: 101%;
+    right: 0;
+}
+
+.active:hover{
+    background-color: transparent !important;
+}
+
+.story .default-card{
+    width: 130px;
+    height: 220px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #EEE;
+    overflow: hidden;
+    margin-right: 10px;
+    
+}
+.story{
+    padding: 0 10px;
+}
+
+
+.story .default-card .image{
+    position: relative;
+    
+}
+
+
+.story .default-card .image .x-icon{
+    position: absolute;
+    background-color: #1b74e4;
+    width: 40px;
+    height: 40px;
+    font-weight: 100;
+    border: 5px solid white;
+    border-radius: 50%;
+    z-index: 500;
+    transform: translateX(50%);
+    bottom: -16px;
+    right: 50% ; 
+
+    font-size: 21px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.story .default-card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: .4s;
+}
+
+.story .default-card:hover img{
+    transform: scale(1.02);
+    opacity: .9;
+}
+
+.story .default-card .text{
+    margin-top:20px ;
+    text-align: center;
+    font-size:13px;
+    font-weight: 600;
+}
+
+
+.stories {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+
+.stories .card{
+    width: 130px;
+    height: 220px;
+    margin-right: 10px;
+
+    /* overflow: hidden; */
+}
+ 
+.stories .card  img {
+    width: 130px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .4s;
+
+}
+
+.stories .card:hover .over 
+
+{
+    background-color: rgba(0 0 0 / .3) ; 
+}
+
+
+
+  .image {
+    position: relative !important;
+    width: 100%;
+
+}
+
+.story .over{
+    position: absolute ;
+    width: 100% ;
+    height: 100% ;
+    top: 0 ;
+    left: 0;
+    background-color: rgba(0 0 0 / .2) ; 
+    border-radius: 10px;
+    transition: .4s;
+}
+ .story .story-name{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-weight: bold;
+    font-size: 11px;
+    color: white;
+ }
+
+ .story .story-profile{
+    position: absolute;
+    display: block;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 50% !important;
+    border: 4px solid #1b74e4;
+    left: 10px;
+    top: 10px;
+    
+ }
+
+
+
+
+
+
+
+
+/* End Main Content  */
