@@ -6,12 +6,12 @@
     display: flex;
     justify-content: space-between;
     background-color: #f0f2f5;
-    padding: 17px 8px;
+    padding: 17px 8px 0px;
 }
 
 aside{
     width: 23%;
-    height: 100%;
+    height: calc(100vh - (54px + 34px));
 }
 
 /* End Global For home */
@@ -21,8 +21,10 @@ aside{
 /* Start For Aside  */
 
 aside{
-    height: 700px;
+    /* height: 700px; */
     overflow-y: scroll;
+    height: calc(100vh - (54px + 17px));
+
 }
 
 aside .tools .item{
@@ -49,8 +51,8 @@ aside .tools .item a:hover{
 }
 
 aside .tools .item a img{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -131,6 +133,7 @@ aside .foot .copy{
 
 .main-content{
     width:600px;
+    height: 40vh;
 }
 
 .main-content .story{
@@ -261,6 +264,7 @@ height: 300px;
     width: 130px;
     height: 220px;
     margin-right: 10px;
+    cursor: pointer;
 
     /* overflow: hidden; */
 }
@@ -320,6 +324,177 @@ height: 300px;
  }
 
 
+
+    /* Start Sponser  */
+    .sponser{
+        overflow-y: scroll;
+        height: calc(100vh - (54px + 17px));
+    }
+    .sponser .own-page{
+        padding: 0px 10px 10px 10px;
+    }
+    .sponser .own-page a{
+        margin-top: 10px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+    }
+    .sponser .own-page h4{
+        color: var(--font-color);
+        font-size: 17px;
+    }
+    .sponser .own-page  a img{
+        width: 30px;
+        height: 30px;
+    }
+    .sponser .own-page a p{
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        padding-left: 5px;
+    }
+
+    .sponser .util{
+        display: flex;
+        align-items: center;
+        color: var(--font-color);
+        margin-top: 10px;
+        padding-left: 12px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .sponser .util img{
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .sponser .own-page{
+        border-bottom: 1px solid #aeafb1;
+    }
+
+    .sponser .brithday{
+        padding: 15px 10px;
+        border-bottom: 1px solid #aeafb1;
+    }
+    .sponser .brithday h4{
+        color: var(--font-color);
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+    .sponser .brithday a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        padding: 4px;
+        transition: .3s;
+        border-radius: 6px;
+    }
+    .sponser .brithday a:hover{
+        background-color: #e4e6e9;
+    }
+
+
+    .sponser .brithday a img{
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+
+
+
+
+
+    .sponser .online{
+        /* height: 400px;
+        overflow-y: scroll; */
+    }
+    .sponser .online .online-head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px;
+        color: var(--font-color);
+        font-weight: bold;
+    }
+    .sponser .online .online-head span{
+        transition: .3s;
+        border-radius: 50%;
+        cursor: pointer;
+        text-align: center;
+        padding: 2px;
+    }
+
+    .sponser .online .online-head span:hover{
+        background-color: #c4c6ca;
+    }
+
+    .sponser .online .online-head span:first-child{
+        margin-right: 20px;
+    }
+
+    .sponser .online .online-item{
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 4px;
+        /* transition: .3s; */
+        border-radius: 6px;
+        cursor: pointer;
+        max-width: 100%;
+        padding: 4px 8px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .sponser .online .online-item:hover{
+        background-color: #d8dbe0;
+
+    }
+    .sponser .online .online-item img{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        position: relative;
+        /* margin-right: 17px; */
+        object-fit: cover;
+        
+    }
+
+    .sponser .online .online-item .online-image {
+        margin-right: 13px;
+        position: relative;
+    }
+    .sponser .online .online-item .online-image .online{
+        position: absolute ; 
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        bottom: 3px;
+        right: 0px;
+        z-index: 5;
+        border: 2px solid #f0f2f5;
+        background-color: #5cc34c;
+        
+    }
+
+    .sponser .online .online-item img::after{
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius:50% ;
+        background-color: #31a24c;
+        top: 40px;
+        right: 10px;
+        z-index: 100;
+    }
+
+    
+
+    /* End Sponser  */
 
 
 

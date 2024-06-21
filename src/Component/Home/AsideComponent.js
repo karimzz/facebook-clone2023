@@ -15,6 +15,19 @@ import ball from './../../Image/ball.png' ;
 import chess from "./../../Image/ches.jpg" ; 
 import god from "./../../Image/download.jpeg"
 import fortunite from "./../../Image/fortunite.jpg"
+import memory from "./../../Image/11820135.png"
+import saved from "./../../Image/11820262.png"
+import groups from "./../../Image/groups.png"
+import video from "./../../Image/video.png"
+import pages from "./../../Image/pages.png"
+import market from "./../../Image/martket.png"
+import game from "./../../Image/game.png"
+import adds from "./../../Image/addds.png"
+import recent from "./../../Image/recent.png"
+import fund from "./../../Image/fund.png"
+
+
+
 
 const AsideComponent = () => {
   return (
@@ -36,8 +49,15 @@ const AsideComponent = () => {
 
                 <div className='item'>
                     <a href='/'>
-                        <img alt='phot' loading='lazy' src={profilePic} />
-                        <p >Events</p>
+                        <img alt='phot' loading='lazy' src={memory} />
+                        <p >Memories</p>
+                    </a>
+                </div>
+
+                <div className='item'>
+                    <a href='/'>
+                        <img alt='phot' loading='lazy' src={saved} />
+                        <p >Saved</p>
                     </a>
                 </div>
 
@@ -50,31 +70,32 @@ const AsideComponent = () => {
 
                 <div className='item'>
                     <a href='/'>
-                        <img alt='phot' loading='lazy' src={profilePic} />
+                        <img alt='phot' loading='lazy' src={groups} />
                         <p >Groups</p>
                     </a>
                 </div>
 
                 <div className='item'>
                     <a href='/'>
-                        <img alt='phot' loading='lazy' src={addsPic} />
-                        <p >Add center</p>
+                        <img alt='phot' loading='lazy' src={video} />
+                        <p >Video</p>
                     </a>
                 </div>
 
                 <div className='item'>
                     <a href='/'>
-                        <img alt='phot' loading='lazy' src={profilePic} />
+                        <img alt='phot' loading='lazy' src={market} />
+                        <p >Marketplace</p>
+                    </a>
+                </div>
+
+                <div className='item'>
+                    <a href='/'>
+                        <img alt='phot' loading='lazy' src={adds} />
                         <p >Ads Manager</p>
                     </a>
                 </div>
 
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={profilePic} />
-                        <p >Blood Donation</p>
-                    </a>
-                </div>
 
                 <div className='item'>
                     <a href='/'>
@@ -82,6 +103,8 @@ const AsideComponent = () => {
                         <p >Climate Scinece Center</p>
                     </a>
                 </div>
+
+
 
                 <div className='item'>
                     <a href='/'>
@@ -92,24 +115,19 @@ const AsideComponent = () => {
 
                 <div className='item'>
                     <a href='/'>
-                        <img alt='phot' loading='lazy' src={profilePic} />
+                        <img alt='phot' loading='lazy' src={fund} />
                         <p >Fundraisers</p>
                     </a>
                 </div>
 
                 <div className='item'>
                     <a href='/'>
-                        <img alt='phot' loading='lazy' src={profilePic} />
-                        <p>Gaming Video </p>
+                        <img alt='phot' loading='lazy' src={game} />
+                        <p>playing Game  </p>
                     </a>
                 </div>
 
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={profilePic} />
-                        <p >Memories</p>
-                    </a>
-                </div>
+
 
                 <div className='item'>
                     <a href='/'>
@@ -134,32 +152,21 @@ const AsideComponent = () => {
 
                 <div className='item'>
                     <a href='/'>
-                        <img alt='phot' loading='lazy' src={profilePic} />
+                        <img alt='phot' loading='lazy' src={pages} />
                         <p >Pages </p>
                     </a>
                 </div>
 
                 <div className='item'>
                     <a href='/'>
-                        <img alt='phot' loading='lazy' src={GalleryPic} />
+                        <img alt='phot' loading='lazy' src={recent} />
                         <p >Recent and activity</p>
                     </a>
                 </div>
 
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={profilePic} />
-                        <p >Saved </p>
-                    </a>
-                </div>
 
 
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={videoPic} />
-                        <p >Video</p>
-                    </a>
-                </div>
+
 
                 <div className='item'>
                     <a href='/'>

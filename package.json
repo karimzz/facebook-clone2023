@@ -1,9 +1,12 @@
 {
-  "homepage" : "http://karimzz.github.io/facebook-clone2023" , 
+  "homepage": "http://karimzz.github.io/facebook-clone2023",
   "name": "facebook-clone2023",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.11",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -11,6 +14,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.1",
+    "react-reveal": "^1.2.2",
     "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
@@ -19,9 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject" ,
-    "predeploy" : "npm run build" , 
-    "deploy" : "gh-pages -d build"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

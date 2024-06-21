@@ -1,3 +1,22 @@
 body{
     background-color: var(--main-background);
 }
+
+/* Start Scroll Bar Css  */
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+     ::-webkit-scrollbar-thumb {
+    background: #d6d8db;
+    transition: .3s;
+  }
+
+
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: ;
+  } */
+
+/* End Scroll Bar Css  */

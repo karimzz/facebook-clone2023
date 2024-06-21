@@ -1,3 +1,19 @@
+
+
+/* Start Global Color  */
+
+:root{
+    --font-color : #6f7175;
+    --hover-color : #e4e6eb;
+}
+
+.txt-bold{
+    font-weight: bold;
+}
+
+/* End Global Color  */
+
+
 /* Start NavBar */
 
 nav {
@@ -15,6 +31,7 @@ z-index: 100;
 .search{
     display: flex;
     align-items: center;
+    width: 330px;
 }
 
 .search .bar{
@@ -34,12 +51,14 @@ z-index: 100;
     border: none;
     color: black;
     font-size: 14px;
+    transition: .3s;
     font-weight: thin;
 }
 
 .search .bar input:focus{
     outline: none;
     color: black;
+    width: 300px;
 }
 
 
@@ -108,7 +127,7 @@ nav .not{
     align-items: center;
 }
 
-nav .not a{
+nav .not .links-nav{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -119,11 +138,26 @@ nav .not a{
     text-decoration: none;
     color: black ; 
     font-size: 18px;
+    position: relative;
     margin-left: 10px;
     transition: .2s;
+    cursor: pointer;
 }
 
-nav .not a:hover{
+nav .not .links-nav .num-of-mess{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: red;
+    top: 0;
+    right: -4px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+nav .not .links-nav:hover{
     background-color: #cbcccf;
 }
 
@@ -133,7 +167,7 @@ nav .not a:hover{
 
 
 
-nav .not a img{
+nav .not .links-nav img{
 width: 40px;
 height: 40px;
 border-radius: 50%;
@@ -157,3 +191,177 @@ nav .not .statu::after{
 }
 
 /* End NavBar */
+
+
+
+/* Start All Chat Component  */
+
+.all-chat{
+    z-index: 1000;
+    position: absolute;
+    left: -40px;
+    top: 125%;
+    transform: translateX(-50%);
+    width: 335px;
+    height:600px;
+    padding: 8px 10px;
+    background-color: white;
+    overflow-y: scroll;
+    cursor:initial;
+    overflow-x: hidden;
+    border-radius: 6px;
+}
+
+.all-chat .all-chat-head{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.all-chat .all-chat-head .icons-chat{
+    display: flex; 
+    align-items: center;
+}
+
+.all-chat .all-chat-head .icons-chat img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin:0 auto;
+}
+
+
+
+.all-chat .all-chat-head .icons-chat span{
+    font-size: 15px;
+    margin:0 auto ;
+
+}
+
+.all-chat .all-chat-head .icons-chat div{
+    padding: 1px;
+    border-radius: 50%;
+    padding: 2px;
+    transition: .3s;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.all-chat .searchbar{
+    display: flex;
+    align-items: center;
+    background-color: #f0f2f5;
+    padding: 8px 12px;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+.all-chat .searchbar input{
+    border: none;
+    background-color: transparent;
+    width: 90%;
+    padding-left: 5px;
+}
+
+.all-chat .searchbar input:focus{
+    outline: none;
+}
+
+.all-chat .all-chat-head .icons-chat div:hover{
+    background-color:var(--hover-color);
+
+}
+
+.all-chat .all-chat-head h4{
+    font-size: 24px ;
+    font-weight: bold;
+}
+
+
+.all-chat .type-message {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+.all-chat .type-message p{
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+
+
+.all-chat .type-message p:first-child{
+    color:#0075FF ;
+    padding: 6px 12px;
+    border-radius: 24px;
+    background-color: #ebf5ff;
+}
+
+.all-chat .type-message p:hover{
+    background-color: #f0f2f5;
+
+}
+
+/* End All Chat Component  */
+
+
+/* Start Chat Component */
+
+.chat-nav{
+    display: flex;
+    align-items: center;
+    padding: 4px 7px; 
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 6px;
+}
+
+.chat-nav:hover{
+    background-color:#f0f2f5 ;
+}
+
+.chat-nav .prof {
+    margin-right: 10px;
+}
+
+.chat-nav .prof img{
+    width:55px !important;
+    height: 55px !important;
+    object-fit: cover;
+}
+
+.chat-nav .info .title{
+    font-weight: bold;
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+
+
+
+.chat-nav .info .last-message {
+    color: red;
+    font-size: 13px;
+}
+
+.chat-nav .info .last-message .n-message{
+    color: black;
+    font-weight: 500;
+    display: inline;
+}
+
+.chat-nav .info .last-message .time{
+    color: #6f7175;
+    margin-left: 2px;
+}
+
+/* End Chat Component */
