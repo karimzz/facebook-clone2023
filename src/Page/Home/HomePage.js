@@ -22,6 +22,7 @@ import mark from "./../../Image/mark.jpg"
 import halland from "./../../Image/halland.jpg"; 
 import de from "./../../Image/de.jpg"
 import messi from "./../../Image/messi.jpg"
+import WritePostComponent from '../../Component/Home/WritePostComponent';
 
 
 
@@ -82,6 +83,7 @@ const HomePage = () => {
 
         <main className='main-content'>
             <StoryComponent />
+            <WritePostComponent />
         </main>
 
         <section className='sponser' style={{width : "350px"}}>

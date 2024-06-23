@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { Fragment, useState } from 'react'
 import profilePic from './../../Image/profile.jpg' ; 
 import frinedPic from "./../../Image/friends.png" ; 
 import feeds from "./../../Image/3dN1QwOLden.png"
@@ -30,6 +30,10 @@ import fund from "./../../Image/fund.png"
 
 
 const AsideComponent = () => {
+
+    // For Control See Featured 
+    const [seeMore , setSeeMore] = useState(false) ; 
+
   return (
     <aside>
             <div className='tools'>
@@ -81,101 +85,120 @@ const AsideComponent = () => {
                         <p >Video</p>
                     </a>
                 </div>
+                {
+                    seeMore ? (
+                        <Fragment>
+                        <div className='item'>
+                            <a href='/'>
+                                <img alt='phot' loading='lazy' src={market} />
+                                <p >Marketplace</p>
+                            </a>
+                        </div>
+        
+                        <div className='item'>
+                            <a href='/'>
+                                <img alt='phot' loading='lazy' src={adds} />
+                                <p >Ads Manager</p>
+                            </a>
+                        </div>
+        
+        
+                        <div className='item'>
+                            <a href='/'>
+                                <img alt='phot' loading='lazy' src={climateScience} />
+                                <p >Climate Scinece Center</p>
+                            </a>
+                        </div>
+        
+        
+        
+                        <div className='item'>
+                            <a href='/'>
+                                <img alt='phot' loading='lazy' src={crisisPic} />
+                                <p >Crisis response</p>
+                            </a>
+                        </div>
+        
+                        <div className='item'>
+                            <a href='/'>
+                                <img alt='phot' loading='lazy' src={fund} />
+                                <p >Fundraisers</p>
+                            </a>
+                        </div>
+        
+                        <div className='item'>
+                            <a href='/'>
+                                <img alt='phot' loading='lazy' src={game} />
+                                <p>playing Game  </p>
+                            </a>
+                        </div>
+        
+        
+        
+                        <div className='item'>
+                            <a href='/'>
+                                <img alt='phot' loading='lazy' src={Messnger} />
+                                <p >Messenger </p>
+                            </a>
+                        </div>
+        
+                        <div className='item'>
+                            <a href='/'>
+                                <img alt='phot' loading='lazy' src={MessengerKids} />
+                                <p >Messenger Kids</p>
+                            </a>
+                        </div>
+        
+                        <div className='item'>
+                            <a href='/'>
+                                <img alt='phot' loading='lazy' src={paymentPic} />
+                                <p >Orders and Payment </p>
+                            </a>
+                        </div>
+        
+                        <div className='item'>
+                            <a href='/'>
+                                <img alt='phot' loading='lazy' src={pages} />
+                                <p >Pages </p>
+                            </a>
+                        </div>
+        
+                        <div className='item'>
+                            <a href='/'>
+                                <img alt='phot' loading='lazy' src={recent} />
+                                <p >Recent and activity</p>
+                            </a>
+                        </div>
+        
+                        </Fragment>
+                    ) : ""
+                }
 
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={market} />
-                        <p >Marketplace</p>
-                    </a>
-                </div>
-
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={adds} />
-                        <p >Ads Manager</p>
-                    </a>
-                </div>
-
-
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={climateScience} />
-                        <p >Climate Scinece Center</p>
-                    </a>
-                </div>
-
-
-
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={crisisPic} />
-                        <p >Crisis response</p>
-                    </a>
-                </div>
-
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={fund} />
-                        <p >Fundraisers</p>
-                    </a>
-                </div>
-
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={game} />
-                        <p>playing Game  </p>
-                    </a>
-                </div>
-
-
-
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={Messnger} />
-                        <p >Messenger </p>
-                    </a>
-                </div>
-
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={MessengerKids} />
-                        <p >Messenger Kids</p>
-                    </a>
-                </div>
-
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={paymentPic} />
-                        <p >Orders and Payment </p>
-                    </a>
-                </div>
-
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={pages} />
-                        <p >Pages </p>
-                    </a>
-                </div>
-
-                <div className='item'>
-                    <a href='/'>
-                        <img alt='phot' loading='lazy' src={recent} />
-                        <p >Recent and activity</p>
-                    </a>
-                </div>
-
-
-
-
-
-                <div className='item'>
-                    <a href='/'>
+                {
+                    seeMore ? (
+                        <div className='item' onClick={()=>setSeeMore(false)}>
+                        <a href='#'>
                         <p className='arrup'><span class="material-symbols-outlined">
                         expand_less
                         </span></p>
+                        <p >See less</p>
+                        </a>
+                        </div>
+                    ) :(
+                        <div className='item' onClick={()=>setSeeMore(true)}>
+                        <a href='#'>
+                        <p className='arrup'><span class="material-symbols-outlined">
+                        expand_more
+                        </span></p>
                         <p >See more</p>
-                    </a>
-                </div>
+                        </a>
+                        </div>
+                    )
+                }
+
+
+
+
 
 
 

@@ -17,7 +17,6 @@ import mark from "./../../Image/mark.jpg"
 import halland from "./../../Image/halland.jpg"; 
 import de from "./../../Image/de.jpg"
 import messi from "./../../Image/messi.jpg"
-import Fade from 'react-reveal/Fade';
 
 
 const AllChatComponent = () => {

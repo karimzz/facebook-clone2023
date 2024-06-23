@@ -199,9 +199,9 @@ nav .not .statu::after{
 .all-chat{
     z-index: 1000;
     position: absolute;
-    left: -40px;
-    top: 125%;
-    transform: translateX(-50%);
+    right: 40px;
+    top: 60px;
+    z-index: 1000;
     width: 335px;
     height:600px;
     padding: 8px 10px;
@@ -338,6 +338,7 @@ nav .not .statu::after{
     width:55px !important;
     height: 55px !important;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .chat-nav .info .title{
@@ -365,3 +366,158 @@ nav .not .statu::after{
 }
 
 /* End Chat Component */
+
+
+
+/* Start Notification  */
+
+.all-not
+{
+    width: 335px;
+    background-color: white;
+    height: 600px;
+    overflow-y: scroll;
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    z-index: 1000;
+    padding: 8px 8px 8px 14px;
+    border-radius: 8px;
+}
+
+.all-not .all-chat-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.all-not .all-chat-head .dot-icon span{
+    font-size: 23px;
+    font-weight: bold;
+}
+.all-not .all-chat-head .dot-icon{
+    padding: 3px 4px;
+    transition: .3s;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+
+.all-not .all-chat-head .dot-icon:hover{
+background-color: var(--hover-background);
+}
+
+.all-not .all-chat-head h3{
+    font-size: 25px;
+
+}
+
+.all-not .type-not{
+
+}
+.all-not .type-not button{
+    background: none;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.all-not .type-not button:hover{
+    background-color: var(--hover-color);
+}
+
+.all-not .type-not .active-not{
+    margin-right: 4px;
+    color:#1b74e4;
+    text-decoration: none;
+    background-color: #EBF5FF;
+    font-weight: bold;
+    
+}
+
+.all-not .titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.all-not .titles p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.all-not .titles a{
+    color: #1b74e4;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 6px 10px;
+    transition: .3s;
+}
+
+.all-not .titles a:hover{
+    background-color: var(--hover-color);
+    border-radius: 3px;
+}
+
+.all-not .card{
+    display: flex;
+    align-items: center;
+    margin: 8px 0px;
+    transition: .3s;
+    padding: 5px ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.all-not .card:hover{
+    background-color: #f2f2f2;
+}
+
+.all-not .card .image{
+    position: relative;
+    width: 90px;
+}
+
+.all-not .card .image .small-img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+}
+
+.all-not .card .profile-image{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+ 
+.all-not .card .des{
+    color: #4b4b4b;
+}
+.all-not .card .des .title-pro{
+    font-weight: 600;
+    color: #050505;
+    display: inline;
+}
+
+.all-not .card .details .date{
+    color: #0a67ff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* End Notification  */

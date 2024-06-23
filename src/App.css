@@ -4,6 +4,11 @@ body{
 
 /* Start Scroll Bar Css  */
 
+
+:root{
+  --hover-background : #e4e6eb;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
