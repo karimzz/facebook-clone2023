@@ -133,8 +133,18 @@ aside .foot .copy{
 
 .main-content{
     width:600px;
-    height: 40vh;
+    height: 90vh;
+    overflow-y: scroll;
 }
+
+.main-content::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .main-content::-webkit-scrollbar-thumb {
+    background: transparent;
+    transition: .3s;
+  }
 
 .main-content .story{
 background-color: white;
@@ -501,7 +511,7 @@ height: 300px;
     /* Start Wite Post  */
 
     .write-post{
-        width: 500px;
+        width: 550px;
         max-width: 100%;
         background-color: white;
         margin: 20px auto;
@@ -528,7 +538,7 @@ height: 300px;
     .write-post .write-body div input{
         border: none;
         background-color:#f0f2f5;
-        width: 410px;
+        width: 450px;
         border-radius: 24px;
         padding: 13px 11px;
         max-width: 100%;

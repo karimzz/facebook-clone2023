@@ -1,4 +1,4 @@
-import React from 'react' ; 
+import React, { Fragment } from 'react' ; 
 import "./homePage.css" ; 
 import AsideComponent from '../../Component/Home/AsideComponent';
 import StoryComponent from '../../Component/Home/StoryComponent';
@@ -23,6 +23,8 @@ import halland from "./../../Image/halland.jpg";
 import de from "./../../Image/de.jpg"
 import messi from "./../../Image/messi.jpg"
 import WritePostComponent from '../../Component/Home/WritePostComponent';
+import AllPostComponent from '../../Component/Home/AllPostComponent';
+import NavBar from '../../Component/Utility/NavBar';
 
 
 
@@ -77,6 +79,9 @@ const HomePage = () => {
     ]
 
   return (
+
+    <Fragment>
+    <NavBar />
     <div className='container'>
 
         <AsideComponent />
@@ -84,6 +89,7 @@ const HomePage = () => {
         <main className='main-content'>
             <StoryComponent />
             <WritePostComponent />
+            <AllPostComponent />
         </main>
 
         <section className='sponser' style={{width : "350px"}}>
@@ -137,9 +143,12 @@ const HomePage = () => {
 
             </div>
 
+
         </section>
     
     </div>
+
+    </Fragment>
   )
 }
 

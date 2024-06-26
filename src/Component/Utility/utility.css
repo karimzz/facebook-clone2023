@@ -521,3 +521,215 @@ background-color: var(--hover-background);
 }
 
 /* End Notification  */
+
+
+/* Start Post Component */
+
+.post-component{
+    width: 550px;
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 7px;
+}
+
+.post-component .post-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 13px;
+}
+
+.post-component .post-head .owner{
+    display: flex;
+    align-items: center;
+}
+
+.post-component .post-head .owner .titles{
+    margin-left: 7px;
+}
+
+.post-component .post-head .owner .titles h3{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.post-component .post-head .owner .titles h3 a{
+    text-decoration: none;
+    color: black;
+}
+
+.post-component .post-head .owner .titles h3 a:hover{
+    text-decoration:underline;
+}
+
+.post-component .post-head .owner .titles .date{
+    font-size: 13px;
+    color: var(--font-color);
+    margin-top: 3px;
+}
+
+.post-component .post-head .owner img{
+    width: 45px;
+    cursor: pointer;
+    height:45px ; 
+    border-radius: 50%;
+object-fit: cover;
+}
+
+.post-component .post-head .options span  {
+    color: var(--font-color);
+    font-size: 22px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.post-component .post-head .options{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    transition: .3s;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-component .post-head .options:hover{
+    background-color: var(--hover-color);
+
+}
+
+.post-component .post-caption{
+    padding: 3px 13px 6px;
+    font-size: .9375rem;
+}
+
+.post-component .post-image img{
+    /* width: 550px; */
+    width: 100%;
+    
+}
+
+.post-component .reacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 12px;
+}
+
+.post-component .reacts .react{
+    display: flex;
+    align-items: center;
+    color: var(--font-color);
+
+}
+
+.post-component .reacts .react .num{
+    transition: .2s;
+    cursor: pointer;
+    padding-bottom: 4px;
+}
+
+.post-component .reacts .react .num:hover {
+    text-decoration: underline;
+}
+
+.post-component .reacts .num{
+    transition: .2s;
+    cursor: pointer;
+}
+
+.post-component .reacts .num:hover{
+    text-decoration: underline;
+}
+
+.post-component .reacts .react .icons{
+    /* width: 35px; */
+    cursor: pointer;
+}
+
+.post-component .reacts .react img{
+    width: 25px;
+    border-radius: 50%;
+    height: 25px;
+    border: 3px solid white;
+
+    
+}
+
+.post-component .reacts .react img:last-child{
+    margin-left: -11px;
+    z-index: 8;
+}
+
+
+.post-component .reacts .share{
+    display: flex;
+    align-items: center;
+}
+
+.post-component .reacts .share .comment{
+    color: var(--font-color);
+    margin-right: 11px;
+}
+
+.post-component .reaction
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 12px;
+    border-top: 1px solid var(--hover-color);
+    border-bottom: 1px solid var(--hover-color);
+    /* margin-bottom: 30px; */
+}
+
+.post-component .reaction .opt{
+    color: var(--font-color);
+    padding: 10px 26px;
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    transition: .3s;
+    /* background-color: var(--hover-color); */
+}
+
+.post-component .reaction .opt:first-child:hover .like-option{
+    display: block;
+}
+
+.post-component .reaction .opt .like-option{
+    position: absolute;
+    width: 260px;
+    height: 54px;
+    border-radius: 23px;
+    top: -130%;
+    background-color: white;
+    display: none;
+    left: 0;
+    z-index: 10;
+    box-shadow: 1px 1px 2px 2px var(--hover-color);
+}
+
+.post-component .reaction .opt .like-option img{
+    width: 50px;
+    height: 50px;
+    transition: .3s;
+}
+
+.post-component .reaction .opt .like-option img:hover{
+    transform: scale(1.2);
+}
+
+.post-component .reaction .opt:hover{
+    background-color: var(--hover-color);
+}
+
+.post-component .reaction .opt i{
+    margin-right: 7px;
+    font-size: 18px;
+}
+
+
+
+
+/* End Post Component */

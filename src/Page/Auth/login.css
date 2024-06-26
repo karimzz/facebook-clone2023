@@ -1,0 +1,156 @@
+.login-main .login-container{
+    height: 85vh;
+    background: #f0f2f5;
+    /* text-align: center; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.login-main .login-container .fb-form img{
+    width:240px;
+    max-width: 100%;
+}
+
+.login-main .login-container form {
+    width: 400px;
+    height: 420px;
+    max-width: 100%;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding:20px 12px ;
+}
+
+@media(max-width:500px){
+    .login-main .login-container form{
+        width: 350px;
+    }
+}
+
+.login-main .login-container form p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.login-main .login-container form input{
+    width: 100%;
+    border: 1px solid var(--hover-color);
+    background-color: white;
+    padding: 20px 10px;
+    margin-bottom: 14px;
+    caret-color: var(--font-color);
+    border-radius: 6px;
+}
+.login-main .login-container form a.forget-password{
+    margin: 13px 0px;
+    font-size: 14px;
+    color: #0075fF;
+    display: block ;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.login-main .login-container form a.forget-password:hover{
+    text-decoration: underline;
+}
+
+.login-main .login-container form input:focus{
+    outline: none;
+}
+
+.login-main .login-container form input::placeholder{
+    color: var(--font-color);
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+.login-main .login-container .fb-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.login-main .login-container form .btn-log{
+    width: 100%;
+    padding: 13px 24px;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0075FF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.login-main .login-container form .btn-log:hover{
+    opacity: .8;
+}
+
+
+.login-main .login-container form .line{
+    color: var(--font-color); 
+    position: relative ;
+    font-size: 13px;
+}
+
+.login-main .login-container form .line::after{
+    content:  "";
+    position: absolute;
+    width: 45%;
+    height: 1px;
+    background-color: var(--hover-color);
+    left: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login-main .login-container form .line::before{
+    content:  "";
+    position: absolute;
+    width: 45%;
+    height: 1px;
+    background-color: var(--hover-color);
+    right: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login-main .login-container form .btn-cre{
+    width: 210px;
+    max-width: 100%;
+    font-weight: bold;
+    font-size: 17px;
+    border: none;
+    border-radius: 6px;
+    background-color: #42B742;
+    padding: 13px 24px;
+    color: white;
+
+}
+
+.login-main .fb-bottom {
+    display: flex ;
+    justify-content: center;
+    color: var(--font-color);
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.login-main .fb-bottom .lang{
+    margin-right: 10px;
+    font-size: 12px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.login-main .fb-bottom .lang:hover{
+    text-decoration: underline;
+}
