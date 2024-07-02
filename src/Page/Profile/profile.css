@@ -1,0 +1,558 @@
+
+
+.profile-head .cover-photo{
+    background: linear-gradient(to top, #ffffff, #7f7f7f);
+
+
+
+    
+}
+
+
+.profile-head .cover-photo .image {
+    width: 870px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 340px;
+}
+
+.profile-head .cover-photo .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+.profile-head
+{
+    border-bottom: 1px solid #dfdbdb;
+}
+
+.profile-head .cover-photo .image .add-photo-btn{
+    border: none;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 15px;
+    cursor: pointer;
+    right: 15px;
+    font-weight: bold;
+    padding: 7px 19px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    font-size: 17;
+    align-items: center;
+    transition: .3s;
+}
+
+.profile-head .cover-photo .image .add-photo-btn:hover{
+    background-color: var(--hover-color);
+}
+
+.profile-head .cover-photo .image .add-photo-btn .material-symbols-outlined{
+    margin-right: 8px;
+}
+
+
+/* Start Profile  */
+
+.profile-container{
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.profile-info{
+    /* display: flex;
+    justify-content: space-between; */
+    padding: 0px 30px;
+    margin-top: -30px;
+
+}
+
+.profile-info .left{
+    display: flex;
+}
+
+
+
+.profile-info .image{
+    width: 170px;
+    position: relative;
+}
+
+.profile-info .image .add-photo {
+    position: absolute;
+    bottom: 16px;
+    right: 14px;
+    object-fit: contain;
+    width: 33px;
+    height: 34px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: #E4E6EB;
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+.profile-info .image .add-photo:hover{
+    background-color: #cccdce;
+}
+
+
+
+
+.profile-info .image img:first-child{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 4px solid white;
+    cursor: pointer;
+}
+
+.profile-info .left .info{
+    padding-top: 50px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.profile-info .left .info h2{
+    font-size: 30px;
+}
+
+.profile-info .left .info p.num-frined{
+    color: var(--font-color);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.profile-info .left .info p.num-frined:hover{
+    text-decoration: underline;
+}
+
+.profile-info .right{
+    padding-top: 30px;
+}
+
+
+.profile-info .left .info .friends{
+    margin-top:8px ;
+    
+}
+.profile-info .left .info .friends .images img{
+    width: 30px;
+    object-fit: cover;
+    height:30px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    margin-right: -10px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.profile-info .left .info .friends {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.profile-info .left .info .friends .text{
+    display: flex;
+}
+
+.profile-info .left .info .friends .text button{
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.profile-info .left .info .friends .text .btn-normal {
+    padding: 7px 18px;
+    border: none;
+    border-radius: 6px;
+}
+
+
+
+.profile-info .left .info .friends .text .btn-back {
+background-color: #E4E6EB;
+color: #6f7175;
+}
+
+.profile-info .left .info .friends .text .btn-back:hover{
+    background-color: #dcdee4;
+
+}
+
+.profile-info .left .info .friends .text .btn-act{
+    background-color: #0075FF;
+    color: white;
+}
+
+.profile-info .left .info .friends .text .btn-act:hover{
+    background-color: #036ee7;
+
+}
+
+.profile-info .left .info .friends .text .btn-add-plus{
+    padding: 9px 22px;
+    border: none;
+    border-radius: 6px;}
+
+
+    .profile-head .profile-head-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #dcd9d9;
+        margin-top: 20px;
+
+    }
+    .profile-head .profile-head-footer .tabs{
+        display: flex;
+        align-items: center;
+    }
+
+    .profile-head .profile-head-footer .tabs .tab{
+        padding:18px 10px ;
+        margin-top: 6px;
+        border-radius: 6px;
+        margin-right: 5px;
+        color: #65676B;
+        font-size: 16px;
+        font-weight: 500;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .profile-head .profile-head-footer .tabs .tab:hover{
+        background-color: var(--hover-color);
+    }
+
+    .profile-head .profile-head-footer .tabs .active{
+        color:#0075FF;
+        border-bottom: 2px solid #0075FF;
+    }
+
+    .profile-head .profile-head-footer .option button{
+        cursor: pointer;
+        background-color: #E4E6EB;
+        padding: 10px 18px;
+        text-align: center;
+        transition: .3s;
+        border: none;
+        border-radius: 6px;
+    }
+
+    .profile-head .profile-head-footer .option button:hover{
+        background-color: #dcdee4;
+
+    }
+
+
+/* End  Profile  */
+
+
+
+
+
+/* Start Profile Main  */
+
+.profile-main{
+    background-color: #f0f2f5;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    height: fit-content;
+}
+
+/* End Profile Main  */
+
+
+
+
+
+/* Start Profile Main (Asids) */
+
+.profile-main .profile-aside{
+    width: 350px;
+    border-radius: 7px;
+}
+
+.profile-main .profile-aside .lock-proifle{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #ebe8e8;
+
+    padding: 12px 10px;
+}
+
+.profile-main .profile-aside .lock-proifle img {
+    width: 48px;
+    height: 48px;
+    margin-right: 5px;
+}
+
+.profile-main .profile-aside .lock-proifle h4{
+    font-weight: 500;
+
+}
+
+.profile-main .profile-aside .lock-proifle a{
+    color: #0075FF;
+    transition: .3s;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.profile-main .profile-aside .lock-proifle a:hover{
+    text-decoration: underline;
+}
+
+
+
+.profile-main .profile-aside .info-of-you{
+    border-radius: 8px;
+    border: 1px solid #ebe8e8;
+    background-color: white;
+    margin-top: 15px;
+    padding: 13px 12px;
+}
+
+.profile-aside .section-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-aside .section-title h3{
+    font-size: 21px;
+
+} 
+
+.profile-aside .section-title .link{
+    color: #0064D1;
+    text-decoration: none;
+    transition: .3s;
+    font-size: 16px;
+    padding: 7px 10px;
+    border-radius: 4px;
+}
+
+.profile-aside .section-title .link:hover{
+    background-color: var(--hover-color);
+}
+
+
+.profile-main .profile-aside .info-of-you h3{
+}
+
+
+.profile-main .profile-aside .info-of-you .aside-btn{
+    width: 100%;
+    border-radius: 7px;
+    background-color:#E4E6EB;
+    border: none;
+    font-weight: bold;
+    padding: 10px 0px;
+    font-size: 14px;
+    margin: 20px 0px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.profile-main .profile-aside .info-of-you .aside-btn:hover{
+    background-color: #dadce0;
+}
+
+.profile-main .profile-aside .info-of-you .past-work .row{
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.profile-main .profile-aside .info-of-you .past-work .row .icon{
+    margin-right: 10px;
+    color: #909192;
+    font-size: 17px;
+}
+.profile-main .profile-aside .info-of-you .past-work .row .text{
+    font-size: 15px;
+}
+.profile-main .profile-aside .info-of-you .past-work .row .text span {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.profile-main .profile-aside .info-of-you .past-work .row  .special-wi{
+    transform: rotate(45deg);
+}
+
+
+.profile-main .profile-aside .info-of-you .highlights {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.profile-main .profile-aside .info-of-you .highlights::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+.profile-main .profile-aside .info-of-you .highlights .card{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.profile-main .profile-aside .info-of-you .highlights .card .title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.profile-main .profile-aside .info-of-you .highlights .image {
+    width: 101px;
+    height: 180px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.profile-main .profile-aside .info-of-you .highlights .image:hover img{
+    background-color: black;
+    transform: scale(1.03);
+}
+
+
+
+
+
+.profile-main .profile-aside .info-of-you .highlights .image::after{
+content: "";
+width: 100%;
+height: 100%;
+background-color: rgba(0  0 0 / .1);
+left: 0;
+top: 0;
+transition: .3s;
+display: none;
+position: absolute;
+}
+
+
+.profile-main .profile-aside .info-of-you .highlights .image:hover::after{
+    display: block;
+}
+
+.profile-main .profile-aside .info-of-you .highlights .image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .3s;
+    height: 100%;
+}
+
+
+.all-photo{
+    border-radius: 8px;
+    border: 1px solid #ebe8e8;
+    background-color: white;
+    margin-top: 15px;
+    padding: 13px 12px
+}
+
+.all-photo .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.all-photo .photos .photo{
+    margin-right: 5px;
+    cursor: pointer;
+}
+.all-photo .photos .photo img {
+    width:100px;
+    border-radius: 4px;
+    height: 100px;
+}
+
+
+
+.all-frineds{
+    border-radius: 8px;
+    border: 1px solid #ebe8e8;
+    background-color: white;
+    margin-top: 15px;
+    padding: 13px 12px
+}
+.all-frineds .section-title  .num-friends{
+    color: var(--font-color);
+    font-size: 17px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.all-frineds .section-title  .num-friends:hover{
+    text-decoration: underline;
+}
+
+.all-frineds .friends{
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+}
+
+
+.all-frineds .friends .friend{
+    margin-right: 5px;
+    margin-bottom: 17px;
+}
+.all-frineds .friends .friend img{
+width: 100px;
+height: 100px;
+object-fit: cover;
+border-radius: 7px;
+}
+
+.all-frineds .friends .friend .info h4{
+font-size: 12px;
+font-weight: 500;
+}
+
+
+/* End Profile Main (Asids) */
+
+
+
+
+
+/* Start Profile Main (Post) */
+
+.profile-main .my-profile-timeline{
+    width: 500px;
+    background-color: white;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
+/* End Profile Main (Post) */

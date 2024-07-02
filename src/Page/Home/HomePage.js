@@ -81,7 +81,6 @@ const HomePage = () => {
   return (
 
     <Fragment>
-    <NavBar />
     <div className='container'>
 
         <AsideComponent />

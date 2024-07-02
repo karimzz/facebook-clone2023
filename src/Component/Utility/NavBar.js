@@ -4,6 +4,7 @@ import facebookIcon from "./../../Image/facebook.png"
 import "./utility.css" ; 
 import AllChatComponent from './AllChatComponent';
 import AllNotificationComponent from './AllNotificationComponent';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -24,7 +25,7 @@ const NavBar = () => {
     }
 
   return (
-    <nav style={{position : "relative"}}>
+    <nav >
         <div className='search'>
             <div className='iconF'>
               <img loading='lazy' alt='facebook' style={{borderRadius : "50%"}} src={facebookIcon}  />
@@ -39,7 +40,7 @@ const NavBar = () => {
        
         <div className='icons'>
         
-            <div className='item'> <a href='/' className='active' ><i className="fa-solid fa-house"></i></a></div>
+            <div className='item'> <Link to={'/facebook-clone2023'} className='active' ><i className="fa-solid fa-house"></i></Link></div>
             <div className='item'> <a href='/'><span className="material-symbols-outlined">subscriptions</span></a></div>
             <div className='item'> <a href='/'><i className="fa-solid fa-users-line"></i></a></div>
             <div className='item'> <a href='/'><span className="material-symbols-outlined">stadia_controller</span></a></div>

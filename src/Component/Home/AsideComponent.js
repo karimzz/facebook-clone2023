@@ -25,6 +25,7 @@ import game from "./../../Image/game.png"
 import adds from "./../../Image/addds.png"
 import recent from "./../../Image/recent.png"
 import fund from "./../../Image/fund.png"
+import { Link } from 'react-router-dom';
 
 
 
@@ -38,10 +39,10 @@ const AsideComponent = () => {
     <aside>
             <div className='tools'>
                 <div className='item'>
-                    <a href='/'>
+                    <Link to={'profile'}>
                         <img alt='phot' loading='lazy' src={profilePic} />
                         <p >Karim Mohamed</p>
-                    </a>
+                    </Link>
                 </div>
 
                 <div className='item'>

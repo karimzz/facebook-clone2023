@@ -149,8 +149,9 @@ nav .not .links-nav .num-of-mess{
     width: 17px;
     height: 17px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #E41E3F;
     top: 0;
+    font-weight: 500;
     right: -4px;
     text-align: center;
     font-size: 12px;
@@ -181,7 +182,7 @@ nav .not .statu{
 nav .not .statu::after{
     content: '';
     position: absolute;
-    background-color:#e41e3f;
+    background-color:#E41E3F;
     border: 2px solid white;
     width: 10px;
     height: 10px;
