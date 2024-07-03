@@ -65,18 +65,7 @@ const ProfileMain = () => {
       likes : "1M" , 
       share : '100K' , 
       comment :'550K' 
-    } , 
-
-    {
-      title : "Karim Mohamed" ,
-      data : "1 day ago ." , 
-      caption : "Welcome" , 
-      profileImage : profilePic , 
-      postImage  : pic5 ,
-      likes : "40K" , 
-      share : '1K' , 
-      comment :'4K' 
-    } , 
+    } 
 
   ]
 
