@@ -6,6 +6,7 @@ import ProfileMain from '../../Component/Profile/ProfileMain';
 
 
 const ProfilePage = () => {
+  
   return (
     <div>
         <ProfileHeadComponent />

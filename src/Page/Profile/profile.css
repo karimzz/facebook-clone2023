@@ -501,7 +501,7 @@ position: absolute;
     border: 1px solid #ebe8e8;
     background-color: white;
     margin-top: 15px;
-    padding: 13px 12px
+    padding: 13px 10px
 }
 .all-frineds .section-title  .num-friends{
     color: var(--font-color);
@@ -524,7 +524,7 @@ position: absolute;
 
 
 .all-frineds .friends .friend{
-    margin-right: 5px;
+    margin-right: 6px;
     margin-bottom: 17px;
 }
 .all-frineds .friends .friend img{
@@ -540,6 +540,22 @@ font-weight: 500;
 }
 
 
+.profile-aside .aside-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-aside .aside-footer span {
+    margin-right: 3px;
+}
+
+.profile-aside .aside-footer span a{
+text-decoration: none;
+color: #65676B;
+font-size: 12px;
+
+}
+
 /* End Profile Main (Asids) */
 
 
@@ -550,9 +566,13 @@ font-weight: 500;
 
 .profile-main .my-profile-timeline{
     width: 500px;
-    background-color: white;
     border-radius: 7px;
     margin-left: 10px;
+    height:1850px;
+    overflow-y: scroll;
 }
+.profile-main .my-profile-timeline::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
 
 /* End Profile Main (Post) */

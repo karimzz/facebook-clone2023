@@ -25,6 +25,14 @@ import messi from "./../../Image/messi.jpg"
 import WritePostComponent from '../../Component/Home/WritePostComponent';
 import AllPostComponent from '../../Component/Home/AllPostComponent';
 import NavBar from '../../Component/Utility/NavBar';
+import mohamedPic from "./../../Image/mohamedPost.jpg" ; 
+import salehPic from "./../../Image/442437449_1053366222815001_3003621214341094569_n.jpg"
+import cr7post from "./../../Image/cr7post.jpg" ; 
+import cr7Pic from "./../../Image/cr7.jpg" ;
+import monaPost from "./../../Image/monaPost.jpg" ;  
+import messiPost from "./../../Image/messiPost.jpg" ; 
+import hanaPost from "./../../Image/hanaPost.jpg" ; 
+
 
 
 
@@ -78,6 +86,62 @@ const HomePage = () => {
       
     ]
 
+    const allPosts = [
+      {
+        title : "Mohamed Salah" ,
+        data : "Yesterday at 9:00 AM " , 
+        caption : "Star not in the sky" , 
+        profileImage : mohamedPic , 
+        postImage  : salehPic ,
+        likes : "200K" , 
+        share : '10K' , 
+        comment :'40K' 
+      } , 
+      {
+        title : "Cristiano Ronaldo" ,
+        data : "just now ." , 
+        caption : "Até ao fim, Portugal!!!" , 
+        profileImage : cr7Pic , 
+        postImage  : cr7post ,
+        likes : "600K" , 
+        share : '2K' , 
+        comment :'110K' 
+      } ,
+      {
+        title : "Mona Zaki" ,
+        data : "45 minute ago ." , 
+        caption : "Hey!" , 
+        profileImage : mona , 
+        postImage  : monaPost ,
+        likes : "34K" , 
+        share : '1K' , 
+        comment :'10K' 
+      } , 
+  
+      {
+        title : "Leo Messi" ,
+        data : "20 minute ago ." , 
+        caption : "Hey!" , 
+        profileImage : messi , 
+        postImage  : messiPost ,
+        likes : "1M" , 
+        share : '100K' , 
+        comment :'550K' 
+      } , 
+  
+      {
+        title : "Hana Elzahed" ,
+        data : "1 day ago ." , 
+        caption : "Welcome" , 
+        profileImage : hana , 
+        postImage  : hanaPost ,
+        likes : "40K" , 
+        share : '1K' , 
+        comment :'4K' 
+      } , 
+  
+    ]
+
   return (
 
     <Fragment>
@@ -88,7 +152,7 @@ const HomePage = () => {
         <main className='main-content'>
             <StoryComponent />
             <WritePostComponent />
-            <AllPostComponent />
+            <AllPostComponent allPosts={allPosts} />
         </main>
 
         <section className='sponser' style={{width : "350px"}}>

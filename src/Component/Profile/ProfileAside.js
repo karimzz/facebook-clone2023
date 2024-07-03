@@ -16,6 +16,11 @@ import hana from "./../../Image/hana.jpg" ;
 import halland from "./../../Image/halland.jpg" ;   
 import cameraPic from "./../../Image/camera.png" ; 
 import insPic from "./../../Image/halland.jpg" ; 
+import mohamedPic from "./../../Image/mohamedPost.jpg"
+import AhmedPic from "./../../Image/ahmed.jpg"
+import gorPic from "./../../Image/gor.jpg"
+import twiitter from "./../../Image/twitter.jpg" ; 
+import leoPic from "./../../Image/messi.jpg"
 
 const ProfileAside = () => {
   return (
@@ -142,10 +147,10 @@ const ProfileAside = () => {
         <div className='friends'>
             <div className='friend'>
                 <div className='image'>
-                    <img src={karim1} alt='frineds' />
+                    <img src={twiitter} alt='frineds' />
                 </div>
                 <div className='info'>
-                    <h4>Karim Mohamed</h4>
+                    <h4>Twitter </h4>
                 </div>
             </div>
             <div className='friend'>
@@ -153,7 +158,7 @@ const ProfileAside = () => {
                     <img src={cr7} alt='frineds' />
                 </div>
                 <div className='info'>
-                    <h4>Karim Mohamed</h4>
+                    <h4>Cristiano Ronaldo</h4>
                 </div>
             </div>
             <div className='friend'>
@@ -161,7 +166,7 @@ const ProfileAside = () => {
                     <img src={hana} alt='frineds' />
                 </div>
                 <div className='info'>
-                    <h4>Karim Mohamed</h4>
+                    <h4>Hana El-Zahed</h4>
                 </div>
             </div>
             <div className='friend'>
@@ -169,7 +174,7 @@ const ProfileAside = () => {
                     <img src={mona} alt='frineds' />
                 </div>
                 <div className='info'>
-                    <h4>Karim Mohamed</h4>
+                    <h4>Mona Zaki</h4>
                 </div>
             </div>
             <div className='friend'>
@@ -177,43 +182,54 @@ const ProfileAside = () => {
                     <img src={halland} alt='frineds' />
                 </div>
                 <div className='info'>
-                    <h4>Karim Mohamed</h4>
+                    <h4>Erling Hanland</h4>
                 </div>
             </div>
             <div className='friend'>
                 <div className='image'>
-                    <img src={karim1} alt='frineds' />
+                    <img src={mohamedPic} alt='frineds' />
                 </div>
                 <div className='info'>
-                    <h4>Karim Mohamed</h4>
+                    <h4>Mohamed Salah</h4>
                 </div>
             </div>
             <div className='friend'>
                 <div className='image'>
-                    <img src={karim1} alt='frineds' />
+                    <img src={AhmedPic} alt='frineds' />
                 </div>
                 <div className='info'>
-                    <h4>Karim Mohamed</h4>
+                    <h4>Ahmed Helmy</h4>
                 </div>
             </div>
             <div className='friend'>
                 <div className='image'>
-                    <img src={karim1} alt='frineds' />
+                    <img src={gorPic} alt='frineds' />
                 </div>
                 <div className='info'>
-                    <h4>Karim Mohamed</h4>
+                    <h4>Gorgina Rodruigez</h4>
                 </div>
             </div>
             <div className='friend'>
                 <div className='image'>
-                    <img src={karim1} alt='frineds' />
+                    <img src={leoPic} alt='frineds' />
                 </div>
                 <div className='info'>
-                    <h4>Karim Mohamed</h4>
+                    <h4>Leo Messi</h4>
                 </div>
             </div>
         </div>
-    </div>
+        </div>
+
+        <div className='aside-footer'>
+            <span><a href='/23'>Privacy</a> .</span>
+            <span><a href='/23'>Terms</a> .</span>
+            <span><a href='/23'>Advertising</a> .</span>
+            <span><a href='/23'>Ad Choices</a> .</span>
+            <span><a href='/23'>Cookies</a> .</span>
+            <span><a href='/23'>More</a> .</span>
+            <span><a href='/23'>Meta</a>  ©</span>
+            <span><a href='/23'>2024</a> </span>
+        </div>
 
     </aside>
   )

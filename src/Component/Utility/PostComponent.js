@@ -46,8 +46,8 @@ const PostComponent = ({title , caption , profileImage , date , likes , share , 
             </div>
         </div>
 
-        <div className='reaction'>
-            <div className='opt'>
+        <div className='reaction' >
+            <div className='opt'style={{padding : "5px 12px"}}>
                 <div className='like-option'>
                     <img src={reactLike} alt='react' />
                     <img src={reactLove} alt='react' />
@@ -60,7 +60,7 @@ const PostComponent = ({title , caption , profileImage , date , likes , share , 
             </div>
 
             <div className='opt'>
-                <i className="fa-regular fa-comment"></i>
+                <i  className="fa-regular fa-comment"></i>
                 Comment
             </div>
 

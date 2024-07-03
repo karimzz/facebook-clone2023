@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { version } from 'react'
 import userPic from "./../../Image/cover.jpg" ; 
 import pic from "./../../Image/profile.jpg" ;
 import cr7 from "./../../Image/cr7.jpg" ;
 import mona from "./../../Image/mona zaki.jpg" ; 
 import hana from "./../../Image/hana.jpg" ;   
 import cameraPic from "./../../Image/camera.png" ; 
+import gorPic from "./../../Image/gor.jpg"
 import insPic from "./../../Image/halland.jpg" ; 
+import veirified from "./../../Image/verified.png"
 
 const ProfileHeadComponent = () => {
   return (
@@ -27,14 +29,14 @@ const ProfileHeadComponent = () => {
                     <img  className='add-photo' src={cameraPic} alt='camera' />
                 </div>
                 <div className='info'>
-                    <h2>Karim Mohamed</h2>
+                    <h2>Karim Mohamed <img style={{width : "16px" , height : "16px"}} src={veirified}  alt='vei'/> </h2>
                     <p className='num-frined'>1K friends</p>
                     <div className='friends'>
                         <div className='images'>
                             <img src={insPic} alt='' />
                             <img src={cr7} alt='' /> 
                             <img src={mona} alt='' />
-                            <img src={userPic} alt='' />
+                            <img src={gorPic} alt='' />
                             <img src={hana} alt='' />
                         </div>
                         <div className='text'>

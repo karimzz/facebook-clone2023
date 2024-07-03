@@ -22,6 +22,7 @@ justify-content: space-between;
 align-items: center;
 background-color: #ffffff;
 padding: 5px 17px;
+
 max-width: 100%;
 position: sticky;
 top: 0;
@@ -40,6 +41,7 @@ z-index: 100;
     background-color: #f0f2f5;
     padding: 10px;
     border-radius: 24px;
+    width: 280px;
     color: #6d6f73;
     margin-left: 8px;
 }
@@ -211,6 +213,11 @@ nav .not .statu::after{
     cursor:initial;
     overflow-x: hidden;
     border-radius: 6px;
+    border: 1px solid #EEE;
+}
+
+.all-chat::-webkit-scrollbar-thumb{
+    background-color: transparent;
 }
 
 .all-chat .all-chat-head{
@@ -385,6 +392,9 @@ nav .not .statu::after{
     padding: 8px 8px 8px 14px;
     border-radius: 8px;
 }
+.all-not::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
 
 .all-not .all-chat-head {
     display: flex;
@@ -531,6 +541,8 @@ background-color: var(--hover-background);
     background-color: white;
     margin: 10px auto;
     border-radius: 7px;
+    max-width: 100%;
+    border: 1px solid #EEE;
 }
 
 .post-component .post-head{
@@ -732,5 +744,8 @@ object-fit: cover;
 
 
 
+.opt .fa-comment{
+    transform:scaleX(-1);
+}
 
 /* End Post Component */
