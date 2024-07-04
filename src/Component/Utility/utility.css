@@ -579,6 +579,22 @@ background-color: var(--hover-background);
     font-size: 13px;
     color: var(--font-color);
     margin-top: 3px;
+    display: flex;
+    align-items: center;
+}
+.post-component .post-head .owner .titles .date img {
+    width: 13px;
+    height: 13px;
+    margin-left: 4px;
+    display: block;
+    margin-bottom: -5px;
+}
+
+.post-component  .share-icon {
+    width: 20px; 
+    height: 20px;
+    filter: invert(59%) sepia(11%) saturate(200%) saturate(135%) hue-rotate(176deg) brightness(96%) contrast(94%);
+    margin-right: 5px;
 }
 
 .post-component .post-head .owner img{
@@ -701,6 +717,10 @@ object-fit: cover;
     padding: 10px 26px;
     cursor: pointer;
     border-radius: 6px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     transition: .3s;
     /* background-color: var(--hover-color); */
@@ -712,7 +732,7 @@ object-fit: cover;
 
 .post-component .reaction .opt .like-option{
     position: absolute;
-    width: 260px;
+    width: 300px;
     height: 54px;
     border-radius: 23px;
     top: -130%;
@@ -742,6 +762,41 @@ object-fit: cover;
     font-size: 18px;
 }
 
+.post-component .reaction .opt span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-component .reaction .opt span img{
+    width: 28px;
+    height: 28px;
+    margin-right: 3px;
+}
+
+.post-component .reaction .opt span.like{
+color: #0866FF;
+}
+
+.post-component .reaction .opt span.love{
+    color: #F33E58;
+}
+
+.post-component .reaction .opt span.wow{
+    color: #F7B125;
+}
+
+.post-component .reaction .opt span.sad{
+    color: #F7B125;
+}
+
+.post-component .reaction .opt span.care{
+    color: #F7B125;
+}
+
+.post-component .reaction .opt span.angry{
+    color: #E9710F;
+}
 
 
 .opt .fa-comment{

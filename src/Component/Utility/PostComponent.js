@@ -1,14 +1,19 @@
-import React from 'react'
-import mohamedPic from "./../../Image/mohamedPost.jpg" ; 
-import salehPic from "./../../Image/442437449_1053366222815001_3003621214341094569_n.jpg"
+import React, { Fragment, useState } from 'react'
 import reactSad from "./../../Image/11820230.png" ; 
 import reactCare from "./../../Image/11820030.png" ; 
 import reactWow from "./../../Image/11820302.png" ;
 import reactLike from "./../../Image/facebook-reactions.png" ;
 import reactLove from "./../../Image/thumbs-up.png" ;
 import veriefied from "./../../Image/verified.png" 
+import reactAngry from "./../../Image/11819998.png"  ;
+import earthPic from "./../../Image/earth.webp"  ;
+import sharePic from "./../../Image/share.png"  ;
 
 const PostComponent = ({title , caption , profileImage , date , likes , share , comment , postImage}) => {
+
+    const [react , setReact] = useState('idle')  // LIKE || LOVE || CARE || WOW || SAD || ANGRY
+
+
   return (
     <div className='post-component'>
 
@@ -17,7 +22,7 @@ const PostComponent = ({title , caption , profileImage , date , likes , share , 
                 <img src={profileImage} alt='profile' />
                 <div className='titles'>
                     <h3> <a  href='/'>{title}  </a> <img style={{width :"14px" , height : "14px"}} src={veriefied} alt='veridied' /> </h3>
-                    <p className='date'>{date}</p>
+                    <p className='date'>{date} .<img src={earthPic} alt='earth' /></p>
                 </div>
             </div>
             <div className='options'>
@@ -49,14 +54,30 @@ const PostComponent = ({title , caption , profileImage , date , likes , share , 
         <div className='reaction' >
             <div className='opt'style={{padding : "5px 12px"}}>
                 <div className='like-option'>
-                    <img src={reactLike} alt='react' />
-                    <img src={reactLove} alt='react' />
-                    <img src={reactWow} alt='react' />
-                    <img src={reactCare} alt='react' />
-                    <img src={reactSad} alt='react' />
+                    <img onClick={()=>setReact('LIKE')}  src={reactLike} alt='react' />
+                    <img onClick={()=>setReact("LOVE")} src={reactLove} alt='react' />
+                    <img onClick={()=>setReact("WOW")} src={reactWow} alt='react' />
+                    <img onClick={()=>setReact("CARE")} src={reactCare} alt='react' />
+                    <img onClick={()=>setReact("SAD")} src={reactSad} alt='react' />
+                    <img onClick={()=>setReact("ANGRY")} src={reactAngry} alt='react' />
                 </div>
-                <i className="fa-regular fa-thumbs-up"></i>
-                Like
+                {
+                    react ==='idle' ? 
+                    <Fragment><i className="fa-regular fa-thumbs-up"></i>Like</Fragment> : 
+                    react === 'LIKE' ?
+                    <Fragment><span className='like'><img alt='like' src={reactLike} /> Like</span></Fragment> :
+                    react === 'LOVE' ?
+                    <Fragment><span className='love'><img alt='love' src={reactLove} /> Love</span></Fragment> :
+                    react === 'WOW' ?
+                    <Fragment><span className='wow'><img alt='wow' src={reactWow} /> Wow</span></Fragment> :
+                    react === 'SAD' ?
+                    <Fragment><span className='sad'><img alt='wow' src={reactSad} /> Sad</span></Fragment> :
+                    react === 'CARE' ?
+                    <Fragment><span className='sad'><img alt='wow' src={reactCare} /> Care</span></Fragment> :
+                    react === 'ANGRY' ?
+                    <Fragment><span className='angry'><img alt='wow' src={reactAngry} /> Angry</span></Fragment> :
+                    ""
+                }
             </div>
 
             <div className='opt'>
@@ -65,12 +86,12 @@ const PostComponent = ({title , caption , profileImage , date , likes , share , 
             </div>
 
             <div className='opt'>
-                <i class="fa-brands fa-whatsapp"></i>
-                Send
+            <i class="fa-brands fa-whatsapp"></i>
+            Send
             </div>
 
             <div className='opt'>
-                <i class="fa-sharp fa-regular fa-share"></i> 
+                <img src={sharePic} alt='share' className='share-icon' /> 
                 Share
             </div>
 

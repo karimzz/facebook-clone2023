@@ -37,7 +37,7 @@ const ProfileMain = () => {
     } , 
     {
       title : "Karim Mohamed" ,
-      data : "just now ." , 
+      data : "just now " , 
       caption : "Até ao fim, Portugal!!!" , 
       profileImage : profilePic , 
       postImage  : pic2 ,
@@ -47,7 +47,7 @@ const ProfileMain = () => {
     } ,
     {
       title : "Karim Mohamed" ,
-      data : "45 minute ago ." , 
+      data : "45 minute ago " , 
       caption : "Hey!" , 
       profileImage : profilePic , 
       postImage  : pic3 ,
@@ -58,7 +58,7 @@ const ProfileMain = () => {
 
     {
       title : "Karim Mohamed",
-      data : "20 minute ago ." , 
+      data : "20 minute ago " , 
       caption : "Look! who are gradudated" , 
       profileImage : profilePic , 
       postImage  : pic4 ,
