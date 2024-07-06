@@ -845,8 +845,15 @@ color: #0866FF;
     box-shadow: 1px 1px 1px  1px #EEE;
     top: 30px;
     left: 10px;
+    max-width: 100%;
     padding: 20px;
     display: none;
+}
+
+@media(max-width:550px){
+    .post-component .post-modal{
+        height: 222px;
+    }
 }
 
 .post-component .show-modal{
@@ -910,6 +917,12 @@ color: #0866FF;
     padding: 9px 31px;
     margin-right: 13px;
     cursor: pointer;
+}
+
+@media(max-width:550px){
+    .post-component .post-modal .option-modal button{
+        padding: 7px 25px;
+    }
 }
 
 .post-component .post-modal .option-modal button.act{
