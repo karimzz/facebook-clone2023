@@ -15,9 +15,9 @@ const ProfileHeadComponent = () => {
         <div className='cover-photo'>
             <div className='image'>
                 <img src={userPic} alt='cover' loading='lazy' />
-                <button className='add-photo-btn'> <span className="material-symbols-outlined">
+                <button className='add-photo-btn'> <span style={{marginRight : "0px"}} className="material-symbols-outlined">
                 photo_camera
-                </span> Edit cover photo</button>
+                </span> <span className='hide-mobile'>Edit cover photo</span></button>
             </div>
             
         </div>
@@ -40,22 +40,22 @@ const ProfileHeadComponent = () => {
                             <img src={hana} alt='' />
                         </div>
                         <div className='text'>
-                            <button className="btn-act btn-normal" > <span className="material-symbols-outlined">add</span> Add story</button>
-                            <button className="btn-back btn-normal" > <span className="material-symbols-outlined">edit</span> Edite profile</button>
+                            <button className="btn-act btn-same-re btn-normal" > <span className="material-symbols-outlined">add</span> Add story</button>
+                            <button className="btn-back btn-normal btn-same-re" > <span className="material-symbols-outlined">edit</span> Edite profile</button>
                             <button className='btn-back btn-normal'><i className="fa-solid fa-chevron-down"style={{fontWeight : "bold"}} ></i></button>
                         </div>
  
                     </div>
                 </div>
             </div>
-            <div className='profile-head-footer'>
+            <div className='profile-head-footer '>
                 <div className='tabs'>
                     <div className='tab active'>Posts</div>
                     <div className='tab'>About</div>
-                    <div className='tab'>Frineds</div>
-                    <div className='tab'>Photos</div>
-                    <div className='tab'>Videos</div>
-                    <div className='tab'>Check-ins</div>
+                    <div className='tab hide-mobile'>Frineds</div>
+                    <div className='tab hide-mobile'>Photos</div>
+                    <div className='tab hide-mobile'>Videos</div>
+                    <div className='tab hide-mobile'>Check-ins</div>
                     <div className='tab'>More <i className="fa-solid fa-caret-down"></i> </div>
                 </div>
                 <div className='option'>

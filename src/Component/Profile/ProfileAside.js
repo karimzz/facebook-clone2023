@@ -220,7 +220,7 @@ const ProfileAside = () => {
         </div>
         </div>
 
-        <div className='aside-footer'>
+        <div className='aside-footer hide-mobile'>
             <span><a href='/23'>Privacy</a> .</span>
             <span><a href='/23'>Terms</a> .</span>
             <span><a href='/23'>Advertising</a> .</span>

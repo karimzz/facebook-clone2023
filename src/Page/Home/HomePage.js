@@ -103,7 +103,7 @@ const HomePage = () => {
         caption : "Até ao fim, Portugal!!!" , 
         profileImage : cr7Pic , 
         postImage  : cr7post ,
-        likes : "Mohamed Saleh and 600K others" , 
+        likes : "Mohamed Salah and 600K others" , 
         share : '2K' , 
         comment :'110K' 
       } ,

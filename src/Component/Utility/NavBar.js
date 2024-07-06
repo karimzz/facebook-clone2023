@@ -28,7 +28,9 @@ const NavBar = () => {
     <nav >
         <div className='search'>
             <div className='iconF'>
-              <img loading='lazy' alt='facebook' style={{borderRadius : "50%"}} src={facebookIcon}  />
+              <Link to={"/facebook-clone2023"}> 
+                <img loading='lazy' alt='facebook' style={{borderRadius : "50%"}} src={facebookIcon}  />
+              </Link>
             </div>
             <div className='bar'>
               <span className="material-symbols-outlined">
