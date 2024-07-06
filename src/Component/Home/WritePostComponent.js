@@ -29,11 +29,11 @@ const WritePostComponent = ({type}) => {
             {
                 type == 'profile' ? 
                 (
-                    <div className='card'>
+                    <div className='card hide-mobile'>
                         <img style={{width : "23px" , height : "23px"}} src={eventPic} alt='video' /> Life event
                     </div>
                 ) : (
-                    <div className='card'>
+                    <div className='card hide-mobile'>
                         <img style={{width : "23px" , height : "23px"}} src={feelPic} alt='video' /> Feeling/activity
                     </div>
                 )

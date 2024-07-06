@@ -46,8 +46,8 @@ const PostComponent = ({title , caption , profileImage , date , likes , share , 
                 <div className='num'>{likes}</div>
             </div>
             <div className='share'>
-                <div className='comment num'>{comment} <i class="fa-solid fa-comment"></i></div>
-                <div className='comment num'>{share} <i class="fa-solid fa-share"></i></div>
+                <div className='comment num hide-mobile'>{comment} <i class="fa-solid fa-comment"></i></div>
+                <div className='comment num hide-mobile'>{share} <i class="fa-solid fa-share"></i></div>
             </div>
         </div>
 

@@ -103,7 +103,7 @@ const HomePage = () => {
         caption : "Até ao fim, Portugal!!!" , 
         profileImage : cr7Pic , 
         postImage  : cr7post ,
-        likes : "600K" , 
+        likes : "Mohamed Saleh and 600K others" , 
         share : '2K' , 
         comment :'110K' 
       } ,
@@ -124,7 +124,7 @@ const HomePage = () => {
         caption : "Hey!" , 
         profileImage : messi , 
         postImage  : messiPost ,
-        likes : "1M" , 
+        likes : "Cristiano Ronaldo and 1M others" , 
         share : '100K' , 
         comment :'550K' 
       } , 
@@ -155,7 +155,7 @@ const HomePage = () => {
             <AllPostComponent allPosts={allPosts} />
         </main>
 
-        <section className='sponser' style={{width : "350px"}}>
+        <section className='sponser hide-mobile' style={{width : "350px"}}>
             <div className='own-page'>
               <h4>Your Pages and profiles</h4>
               <a className='page' href='https://facebook.com'>

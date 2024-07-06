@@ -11,6 +11,15 @@
     font-weight: bold;
 }
 
+@media(max-width:550px){
+
+    .hide-mobile{
+        display: none !important;
+    }
+}
+
+
+
 /* End Global Color  */
 
 
@@ -44,6 +53,12 @@ z-index: 100;
     width: 280px;
     color: #6d6f73;
     margin-left: 8px;
+}
+
+@media(max-width:550px){
+    .search .bar{
+        width: 43px;
+    }
 }
 
 .search .bar input{
@@ -119,6 +134,13 @@ nav .icons  .active::after{
 .search .iconF img{
     width: 40px;
     height: 40px;
+}
+
+@media(max-width :500px){
+    .search .iconF img{
+        width: 35px;
+        height: 35px;
+    }
 }
 
 
@@ -724,6 +746,12 @@ object-fit: cover;
     position: relative;
     transition: .3s;
     /* background-color: var(--hover-color); */
+}
+
+@media(max-width:550px){
+    .post-component .reaction .opt{
+        padding: 10px 0px;
+    }
 }
 
 .post-component .reaction .opt:first-child:hover .like-option{

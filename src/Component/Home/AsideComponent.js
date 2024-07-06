@@ -36,7 +36,7 @@ const AsideComponent = () => {
     const [seeMore , setSeeMore] = useState(false) ; 
 
   return (
-    <aside>
+    <aside className='hide-mobile'>
             <div className='tools'>
                 <div className='item'>
                     <Link to={'profile'}>
