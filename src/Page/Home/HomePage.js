@@ -30,8 +30,13 @@ import salehPic from "./../../Image/442437449_1053366222815001_30036212143410945
 import cr7post from "./../../Image/cr7post.jpg" ; 
 import cr7Pic from "./../../Image/cr7.jpg" ;
 import monaPost from "./../../Image/monaPost.jpg" ;  
+import mohamedPost1 from "./../../Image/mohamedPost1.jpg" ;  
 import messiPost from "./../../Image/messiPost.jpg" ; 
 import hanaPost from "./../../Image/hanaPost.jpg" ; 
+import ahmedPic from "./../../Image/ahmedsaadpic.jpg" ; 
+import ahmedsaadPost from "./../../Image/ahmedsaadPost.jpg" ; 
+import zizo from "./../../Image/zizo.jpg" ; 
+import zizoPost from "./../../Image/zizoPost.jpg" ; 
 
 
 
@@ -99,7 +104,7 @@ const HomePage = () => {
       } , 
       {
         title : "Cristiano Ronaldo" ,
-        data : "just now ." , 
+        data : "just now " , 
         caption : "Até ao fim, Portugal!!!" , 
         profileImage : cr7Pic , 
         postImage  : cr7post ,
@@ -109,7 +114,7 @@ const HomePage = () => {
       } ,
       {
         title : "Mona Zaki" ,
-        data : "45 minute ago ." , 
+        data : "45 minute ago " , 
         caption : "Hey!" , 
         profileImage : mona , 
         postImage  : monaPost ,
@@ -120,7 +125,7 @@ const HomePage = () => {
   
       {
         title : "Leo Messi" ,
-        data : "20 minute ago ." , 
+        data : "20 minute ago " , 
         caption : "Hey!" , 
         profileImage : messi , 
         postImage  : messiPost ,
@@ -131,11 +136,41 @@ const HomePage = () => {
   
       {
         title : "Hana Elzahed" ,
-        data : "1 day ago ." , 
+        data : "1 day ago " , 
         caption : "Welcome" , 
         profileImage : hana , 
         postImage  : hanaPost ,
         likes : "40K" , 
+        share : '1K' , 
+        comment :'4K' 
+      } , 
+      {
+        title : "Mohamed Salah" ,
+        data : "4 day ago" , 
+        caption : "🌊" , 
+        profileImage : mohamedPic , 
+        postImage  : mohamedPost1 ,
+        likes : "140K" , 
+        share : '1K' , 
+        comment :'4K' 
+      } , 
+      {
+        title : "Ahmed Saad" ,
+        data : "March 7" , 
+        caption : "اختيارتي" , 
+        profileImage : ahmedPic , 
+        postImage  : ahmedsaadPost ,
+        likes : "140K" , 
+        share : '1K' , 
+        comment :'4K' 
+      } , 
+      {
+        title : "Ahmed Sayed Zizo" ,
+        data : "March 22 " , 
+        caption : "" , 
+        profileImage : zizo , 
+        postImage  : zizoPost ,
+        likes : "140K" , 
         share : '1K' , 
         comment :'4K' 
       } , 

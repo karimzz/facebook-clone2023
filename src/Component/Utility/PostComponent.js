@@ -13,15 +13,45 @@ const PostComponent = ({title , caption , profileImage , date , likes , share , 
 
     const [react , setReact] = useState('idle')  // LIKE || LOVE || CARE || WOW || SAD || ANGRY
 
+    // For Control modal info
+    const [showModal , setShowModal] = useState(false); 
 
   return (
-    <div className='post-component'>
+    <div className='post-component' >
+
+
 
         <div className='post-head'>
             <div className='owner'>
                 <img src={profileImage} alt='profile' />
                 <div className='titles'>
-                    <h3> <a  href='/'>{title}  </a> <img style={{width :"14px" , height : "14px"}} src={veriefied} alt='veridied' /> </h3>
+                    <h3  > 
+                    <div className={`post-modal ${showModal ? 'show-modal' : "" }`}>
+                    <div className='head'>
+                        <div className='image'>
+                            <img src={profileImage} alt='profile' />
+                        </div>
+                        <div className='des'>
+                            <h4>{title}</h4>
+                            <div className='row'>
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>61 mutual friends including <span className='boldy'>Leo messi</span> and <span>Ahmed Saad</span> </p>
+                            </div>
+                            <div className='row'>
+                                <i class="fa-solid fa-house-chimney"></i>
+                                <p>Lives in <span className='boldy'>Cairo, Egypt</span>  </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div className='option-modal'>
+                        <button> <i className="fa-solid fa-user-check"></i> Friends</button>
+                        <button className='act'> <i className="fa-brands fa-facebook-messenger"></i> Message</button>
+                        <button style={{padding : "9px 16px"}} ><i className="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                    
+                    </div>
+                    <a  href='/'>{title}  </a> <img style={{width :"14px" , height : "14px"}} src={veriefied} alt='veridied' /> </h3>
                     <p className='date'>{date} .<img src={earthPic} alt='earth' /></p>
                 </div>
             </div>
