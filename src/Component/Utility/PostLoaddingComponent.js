@@ -1,22 +1,10 @@
-import React, { Fragment, useState } from 'react'
-import reactSad from "./../../Image/11820230.png" ; 
-import reactCare from "./../../Image/11820030.png" ; 
-import reactWow from "./../../Image/11820302.png" ;
-import reactLike from "./../../Image/facebook-reactions.png" ;
-import reactLove from "./../../Image/thumbs-up.png" ;
-import veriefied from "./../../Image/verified.png" 
-import reactAngry from "./../../Image/11819998.png"  ;
-import earthPic from "./../../Image/earth.webp"  ;
-import sharePic from "./../../Image/share.png"  ;
+import React from 'react'
+
 import { Skeleton } from '@mui/material';
 
 
 const PostLoaddingComponent = ({title , caption , profileImage , date , likes , share , comment , postImage}) => {
 
-    const [react , setReact] = useState('idle')  // LIKE || LOVE || CARE || WOW || SAD || ANGRY
-
-    // For Control modal info
-    const [showModal , setShowModal] = useState(false); 
 
   return (
     <div className='post-component' >
@@ -56,14 +44,7 @@ const PostLoaddingComponent = ({title , caption , profileImage , date , likes , 
         
         <div className='reaction' >
             <div className='opt'style={{padding : "5px 12px"}}>
-                <div className='like-option'>
-                    <img onClick={()=>setReact('LIKE')}  src={reactLike} alt='react' />
-                    <img onClick={()=>setReact("LOVE")} src={reactLove} alt='react' />
-                    <img onClick={()=>setReact("WOW")} src={reactWow} alt='react' />
-                    <img onClick={()=>setReact("CARE")} src={reactCare} alt='react' />
-                    <img onClick={()=>setReact("SAD")} src={reactSad} alt='react' />
-                    <img onClick={()=>setReact("ANGRY")} src={reactAngry} alt='react' />
-                </div>
+
                 <Skeleton style={{borderRadius : "6px"}} variant="rectangular" border width={70} height={10} />
 
             </div>

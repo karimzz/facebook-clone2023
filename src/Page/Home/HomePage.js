@@ -7,7 +7,6 @@ import prom from "./../../Image/13875405.png" ;
 import page from "./../../Image/6238834.png"
 import git from "./../../Image/gift.png"
 import onlineProfile from "./../../Image/mohamedPost.jpg"
-import userProfile from "./../../Image/11820201.png"
 import OnlineChat from '../../Component/Home/OnlineChat';
 
 import cr7 from "./../../Image/cr7.jpg"
@@ -24,7 +23,6 @@ import de from "./../../Image/de.jpg"
 import messi from "./../../Image/messi.jpg"
 import WritePostComponent from '../../Component/Home/WritePostComponent';
 import AllPostComponent from '../../Component/Home/AllPostComponent';
-import NavBar from '../../Component/Utility/NavBar';
 import mohamedPic from "./../../Image/mohamedPost.jpg" ; 
 import salehPic from "./../../Image/442437449_1053366222815001_3003621214341094569_n.jpg"
 import cr7post from "./../../Image/cr7post.jpg" ; 

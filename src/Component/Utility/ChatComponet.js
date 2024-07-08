@@ -1,5 +1,4 @@
 import React from 'react'
-import pic from "./../../Image/mona zaki.jpg"
 
 const ChatComponet = ({image , username , lastSeen , message}) => {
   return (

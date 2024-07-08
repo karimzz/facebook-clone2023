@@ -1,7 +1,6 @@
 import React from 'react' ; 
 import careReact from "./../../Image/11820030.png" ; 
 import monaPic from "./../../Image/mona zaki.jpg" ;
-import commentIcon from "./../../Image/facebook (1).png"
 import wowReact from "./../../Image/11820302.png" ;
 import angryReact from "./../../Image/11819998.png" ;
 import messiPic from "./../../Image/messi.jpg" ; 

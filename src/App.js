@@ -1,10 +1,8 @@
 import './App.css';
 import { BrowserRouter,  Route,  Routes } from 'react-router-dom';
-import NavBar from './Component/Utility/NavBar';
 import HomePage from './Page/Home/HomePage';
 import LoginPage from './Page/Auth/LoginPage';
 import ProfilePage from './Page/Profile/ProfilePage';
-import ProfileHeadComponent from './Component/Profile/ProfileHeadComponent';
 import SharedComponent from './Component/Utility/SharedComponent';
 
 function App() {

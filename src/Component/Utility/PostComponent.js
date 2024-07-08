@@ -14,7 +14,7 @@ const PostComponent = ({title , caption , profileImage , date , likes , share , 
     const [react , setReact] = useState('idle')  // LIKE || LOVE || CARE || WOW || SAD || ANGRY
 
     // For Control modal info
-    const [showModal , setShowModal] = useState(false); 
+    const [showModal ] = useState(false); 
 
   return (
     <div className='post-component' >

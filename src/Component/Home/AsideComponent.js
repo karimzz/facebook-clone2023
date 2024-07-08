@@ -3,14 +3,11 @@ import React, { Fragment, useState } from 'react'
 import profilePic from './../../Image/profile.jpg' ; 
 import frinedPic from "./../../Image/friends.png" ; 
 import feeds from "./../../Image/3dN1QwOLden.png"
-import addsPic from "./../../Image/Ads.png" ; 
 import climateScience from "./../../Image/Climate.png" ; 
 import crisisPic from "./../../Image/crisis.png" ; 
 import Messnger from "./../../Image/messenger.png" ; 
 import MessengerKids from "./../../Image/messengerKids.png" ; 
 import paymentPic from "./../../Image/wallet.png" ; 
-import videoPic from "./../../Image/Reels.png"
-import GalleryPic from './../../Image/Gallery.png' ;
 import ball from './../../Image/ball.png' ;  
 import chess from "./../../Image/ches.jpg" ; 
 import god from "./../../Image/download.jpeg"
@@ -178,7 +175,7 @@ const AsideComponent = () => {
                 {
                     seeMore ? (
                         <div className='item' onClick={()=>setSeeMore(false)}>
-                        <a href='#'>
+                        <a href='/23'>
                         <p className='arrup'><span class="material-symbols-outlined">
                         expand_less
                         </span></p>
@@ -187,7 +184,7 @@ const AsideComponent = () => {
                         </div>
                     ) :(
                         <div className='item' onClick={()=>setSeeMore(true)}>
-                        <a href='#'>
+                        <a href='/23'>
                         <p className='arrup'><span class="material-symbols-outlined">
                         expand_more
                         </span></p>
