@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path='/login' element={<LoginPage />} />
 
-          <Route path='/facebook-clone2023' element={<SharedComponent />}>
+          <Route path='/' element={<SharedComponent />}>
             <Route index element={<HomePage />} />
             <Route path='profile' element={<ProfilePage />} />
           </Route>
