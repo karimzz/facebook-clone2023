@@ -1,22 +1,12 @@
 import React from 'react'
 import ProfileAside from './ProfileAside'
 import ProfilePosts from './ProfilePosts'
-import PostComponent from '../Utility/PostComponent' ;
-import mohamedPic from "./../../Image/mohamedPost.jpg" ; 
-import salehPic from "./../../Image/442437449_1053366222815001_3003621214341094569_n.jpg"
-import cr7post from "./../../Image/cr7post.jpg" ; 
-import cr7Pic from "./../../Image/cr7.jpg" ;
-import mona from "./../../Image/mona zaki.jpg" ;  
-import monaPost from "./../../Image/monaPost.jpg" ;  
-import messi from "./../../Image/messi.jpg" ; 
-import messiPost from "./../../Image/messiPost.jpg" ; 
-import hanaPost from "./../../Image/hanaPost.jpg" ; 
+
 import profilePic from "./../../Image/profile.jpg"
 import pic1 from "./../../Image/profile.jpg"
 import pic2 from "./../../Image/karim8.jpg"
 import pic3 from "./../../Image/karim9.jpg"
 import pic4 from "./../../Image/karim10.jpg"
-import pic5 from "./../../Image/karim11.jpg"
 
 
 

@@ -27,7 +27,7 @@ const WritePostComponent = ({type}) => {
 
 
             {
-                type == 'profile' ? 
+                type === 'profile' ? 
                 (
                     <div className='card hide-mobile'>
                         <img style={{width : "23px" , height : "23px"}} src={eventPic} alt='video' /> Life event

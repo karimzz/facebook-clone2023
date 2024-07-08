@@ -9,13 +9,10 @@ import karim3 from "./../../Image/karim3.jpg"
 import karim4 from "./../../Image/karim4.jpg"
 import karim5 from "./../../Image/karim5.jpg"
 import karim6 from "./../../Image/karim6.jpg"
-import karim7 from "./../../Image/karim7.jpg"
 import cr7 from "./../../Image/cr7.jpg" ;
 import mona from "./../../Image/mona zaki.jpg" ; 
 import hana from "./../../Image/hana.jpg" ;   
 import halland from "./../../Image/halland.jpg" ;   
-import cameraPic from "./../../Image/camera.png" ; 
-import insPic from "./../../Image/halland.jpg" ; 
 import mohamedPic from "./../../Image/mohamedPost.jpg"
 import AhmedPic from "./../../Image/ahmed.jpg"
 import gorPic from "./../../Image/gor.jpg"
@@ -37,7 +34,7 @@ const ProfileAside = () => {
         <div className='info-of-you'>
             <div className='section-title'>
                 <h3>Intro</h3>
-                <a href='/23' className='link'></a>
+
             </div>
             <button  className='aside-btn'>Add bio</button>
 
