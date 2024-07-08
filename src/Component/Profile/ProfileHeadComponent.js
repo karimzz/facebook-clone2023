@@ -1,4 +1,4 @@
-import React, { version } from 'react'
+import React from 'react'
 import userPic from "./../../Image/cover.jpg" ; 
 import pic from "./../../Image/profile.jpg" ;
 import cr7 from "./../../Image/cr7.jpg" ;
